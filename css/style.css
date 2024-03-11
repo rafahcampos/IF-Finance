@@ -1,42 +1,72 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    font-family:Helvetica, Arial,  sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #333333;
+    color: #fff;
 }
 
-header {
-    width: calc(100% - 32px); 
-    height: 70;
+body > header {
+    width: calc(100% - 32px);
+    height: 70px;
     background: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 16px;
 }
-.logotipo{
+
+body > header nav {
+   
+    color: #fff;
+}
+
+.logotipo {
     width: 200px;
     height: 45px;
     background: #545454;
     display: flex;
     align-items: center;
     gap: 5px;
-  
+
 
 }
 
-nav {
-    width: 500px;
-    height: 45px;
-    background: #545454;
+.logotipo img {
+    width: 60px;
+    height: 60px;
+
 }
 
-.logotipo img{
-    width: 45px;
-    height: 45px;
-    
-}
-.logotipo h1{
+.logotipo h1 {
     color: white;
     margin: 0;
-    margin: 9px 0 0 0 ;
+    margin: 9px 0 0 0;
 }
+
+.logotipo h1 span {
+    color: #f94060;
+
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+ 
+    min-height: calc(100vh - 302px);
+    padding: 16px;
+}
+footer{
+    background: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
