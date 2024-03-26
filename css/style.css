@@ -5,6 +5,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background: #333333;
     color: #fff;
+    font-size: 1.1rem;
 }
 
 body > header {
@@ -174,4 +175,62 @@ tr:nth-child(even){
 }
 tr:nth-child(odd){
     background:#7b7b7b;
+}
+
+fieldset{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 10px 5px 0;
+}
+
+fieldset h5{
+    font-size: 1.1rem;
+ 
+}
+
+legend{
+    font-size: 1.2rem;
+    padding: 20px 0 10px 0;
+}
+
+input[type=text], input[type=email],input[type=password],select,textarea{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 3px 0 16px 0;
+    border: none;
+    background: #7b7b7b;
+    color: #fff;
+}
+
+input[type=submit], input[type=reset]{
+    border: 1px solid f94060;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background: #f94060;
+    font-size: 1.1rem;
+    margin: 16px 16px 16px 0;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+    background: orange;
+}
+
+input[type=submit]:active, input[type=reset]:active{
+    background: rgb(136, 90, 6);
+}
+
+#banner{
+    width: 500px;
+    height: 300px;
+    background-color: #333333;
+    background-image: url('../img/bg-marketing.jpg');
+    background-size: cover;  /*Joga a imagem sem distorcer */
+    /*background: #333333 url('../img/bg-marketing.jpg') right bottom no-repeat 200px 300px;*/
 }
